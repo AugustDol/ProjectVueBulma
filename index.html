@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <title>bulma and vue calculator!!!</title>
+
+    <style>
+        button {
+            height: 100vw;
+            width: 3vw;
+        }
+
+        .column {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .color1 {
+            background-color: #323232;
+            color: white;
+        }
+
+        .color2 {
+            background-color: #3b3b3b;
+            color: white;
+        }
+
+        .color3 {
+            background-color: #b6c1dd;
+            color: black;
+        }
+
+        .box-size1 {
+            background-color: #202020;
+            color: white;
+
+            height: 23vw;
+            width: 14.5vw;
+        }
+
+        .box-size2 {
+            background-color: #202020;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <section class="section">
+            <h1 class="title">Calcolatrice</h1>
+            <div class="container">
+                <div class="box box-size1">
+                    <div class="box box-size2">
+                        <h2 class="subtitle">{{ display }}</h2>
+                    </div>
+                    <h2 class="subtitle">{{ display }}</h2>
+                    
+                    <div class="columns is-flex is-flex-direction-column">
+                        <div class="column">
+                            <button class="button is-warning color1">%</button>
+                            <button class="button is-warning color1">CE</button>
+                            <button class="button is-warning color1">C</button>
+                            <button class="button is-warning color1">⌫</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-warning color1">⅟𝑥</button>
+                            <button class="button is-warning color1">𝑥²</button>
+                            <button class="button is-warning color1">√</button>
+                            <button class="button is-warning color1">÷</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-primary color2">7</button>
+                            <button class="button is-primary color2">8</button>
+                            <button class="button is-primary color2">9</button>
+                            <button class="button is-warning color1">x</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-primary color2">4</button>
+                            <button class="button is-primary color2">5</button>
+                            <button class="button is-primary color2">6</button>
+                            <button class="button is-warning color1">-</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-primary color2">1</button>
+                            <button class="button is-primary color2">2</button>
+                            <button class="button is-primary color2">3</button>
+                            <button class="button is-warning color1">+</button>
+                        </div>
+                        <div class="column">
+                            <button class="button is-primary color2">+/-</button>
+                            <button class="button is-primary color2">0</button>
+                            <button class="button is-primary color2">,</button>
+                            <button class="button is-light color3">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
